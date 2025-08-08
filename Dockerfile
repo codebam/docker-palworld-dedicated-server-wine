@@ -239,7 +239,9 @@ RUN apt-get update \
 	gnupg \
 	xvfb \
 	zenity \
-	tzdata
+	tzdata \
+	gettext-base \
+	moreutils
 
 # Configure locale
 RUN echo "LANG=US.UTF-8" >/etc/default/locale && \
